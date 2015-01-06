@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<div data-bind="visible: !$root.showLoading()" style="display:none">
+
+    <h4>Content</h4>
+    <div>
+        <form id="mainForm">
+            <input type="text" name="Title" class="m-wrap m-ctrl-large" placeholder="Enter Title" data-bind="value: contentForm.title" /><br />
+            <textarea name="Text" class="m-wrap m-ctrl-large" rows="5" placeholder="Enter Text" data-bind="value: contentForm.text"></textarea><br />
+            Video<input type="file" id="contentFile" name="contentFile" class="m-wrap m-ctrl-large" data-bind="value: contentForm.videoFile" /> <br />
+            Thumbnail<input type="file" id="contentThumbnail" name="contentThumbnail" class="m-wrap m-ctrl-large" data-bind="value: contentForm.thumnailImage" /> <br />
+            <input type="hidden" name="Tags" data-bind="value: contentForm.tags" />
+            <input type="hidden" name="UserName" data-bind="value: contentForm.userName" />
+            <div data-bind="foreach: tags">
+                <div data-bind="if: Nodes().length > 0 ">
+                    <span data-bind="text:Branch"></span><br />
+                    <div data-bind="foreach: Nodes">
+                        <input type="checkbox" name="alltags" data-bind="value: Name +'|' + Branch, checked: $root.contentForm.selectedTags" />
+                        &nbsp;<span data-bind="text:Name"></span>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" class="m-btn blue" data-bind="click: addContent" value="Add Content" />
+        </form>
+    </div>
+
+</div>

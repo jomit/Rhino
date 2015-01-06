@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div data-bind="visible: !$root.showLoading()" style="display:none">
+
+    <h4>Categories</h4>
+    <div class="m-input-append">
+        <input type="text" class="m-wrap" placeholder="Enter Category Title" data-bind="value: tagForm.newBranchName" />
+        <a href="#" class="m-btn blue" data-bind="click: addBranch">Add Category</a>
+    </div>
+    <br />
+    <div data-bind="foreach: tags" class="m-wrap">
+        <div class="m-input-append" style="float:left; margin-right:1%">
+            <a class="m-btn blue-stripe" data-bind="text:Branch"></a>
+            <a data-bind="click: $root.deleteBranch" class="m-btn red icn-only"><i class="icon-remove icon-white"></i></a>
+        </div>
+    </div>
+
+</div>
+<p>&nbsp;</p>
+

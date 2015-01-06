@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="indigoslateservice" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Jomit\\Projects\\IndigoSlate\\Rhino\\Rhino\.Service\\obj\\Production\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Jomit\\Projects\\IndigoSlate\\Rhino\\Rhino\.Service\\obj\\Production\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="IndigoSlateAzureStorage-Web.config Connection String" description="" value="DefaultEndpointsProtocol=https;AccountName=indigoslate;AccountKey=NhlYM10ukL/D5PQhsp2D2P9SPUI38R/3SNYgmXq8qaj4WHFBWNGBKPnHSwDlfwSLkRBWF3Ji6jCER7b8pYve0w==" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Jomit\\Projects\\IndigoSlate\\Rhino\\Rhino\.Service\\obj\\Production\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='IndigoSlateAzureStorage']/@connectionString" />
+  </parameter>
+  <parameter name="isdb-Web.config Connection String" description="isdb Connection String used in web.config by the application to access the database." value="data source=hwjxgxp8bw.database.windows.net,1433;initial catalog=isprod;integrated security=false;user id=jomit;password=book@cafe1;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Jomit\\Projects\\IndigoSlate\\Rhino\\Rhino\.Service\\obj\\Production\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='isdb']/@connectionString" />
+  </parameter>
+</parameters>

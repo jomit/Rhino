@@ -1,0 +1,15 @@
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\bin\Debug\ReverseMap\resources.pri
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\bin\Debug\AppxManifest.xml
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\bin\Debug\Rhino.Win8App.build.appxrecipe
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\bld\Debug\priconfig.xml
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\bld\Debug\priconfig.xml.intermediate
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\bld\Debug\layout.resfiles
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\bld\Debug\layout.resfiles.intermediate
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\bld\Debug\resources.resfiles
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\bld\Debug\resources.resfiles.intermediate
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\bld\Debug\pri.resfiles
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\bld\Debug\pri.resfiles.intermediate
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\bld\Debug\qualifiers.txt
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\bld\Debug\qualifiers.txt.intermediate
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\bld\Debug\ProjectArchitectures.txt

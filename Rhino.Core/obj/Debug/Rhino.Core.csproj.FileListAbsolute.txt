@@ -1,0 +1,5 @@
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Core\bin\Debug\Rhino.Core.dll
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Core\bin\Debug\Rhino.Core.pdb
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Core\obj\Debug\Rhino.Core.csprojResolveAssemblyReference.cache
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Core\obj\Debug\Rhino.Core.dll
+C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Core\obj\Debug\Rhino.Core.pdb

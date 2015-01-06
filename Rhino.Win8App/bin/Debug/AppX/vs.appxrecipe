@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>JOMIT007</Machine>
+    <WindowsUser>Jomit</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>2c1d1a30-7d91-493b-8df6-c4dcfe75becb</PackageIdentityName>
+    <IntermediateOutputPath>C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\bld\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>43D40155D6B79D331676A07271A6674254A73DEB95A2FEF95162FD50F6EAF103</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>2c1d1a30-7d91-493b-8df6-c4dcfe75becb_1.0.0.0_neutral__vgpa57g9eagrm</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>2c1d1a30-7d91-493b-8df6-c4dcfe75becb_vgpa57g9eagrm!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>2c1d1a30-7d91-493b-8df6-c4dcfe75becb</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Jomit</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-09-19T16:57:57.130</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\css\m-styles.min.css">
+      <PackagePath>css\m-styles.min.css</PackagePath>
+      <Modified>2014-09-10T22:11:21.722</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2014-09-12T21:36:53.766</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2014-09-12T18:04:47.641</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\pages\home\home.html">
+      <PackagePath>pages\home\home.html</PackagePath>
+      <Modified>2014-09-18T01:01:01.432</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\images\logo.scale-100.png">
+      <PackagePath>images\logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-03T00:38:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\images\smalllogo.scale-100.png">
+      <PackagePath>images\smalllogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-03T00:38:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\images\splashscreen.scale-100.png">
+      <PackagePath>images\splashscreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-03T00:38:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\images\storelogo.scale-100.png">
+      <PackagePath>images\storelogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-06-03T00:38:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\img\glyphicons-halflings-white.png">
+      <PackagePath>img\glyphicons-halflings-white.png</PackagePath>
+      <Modified>2014-08-18T07:11:39.538</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\img\glyphicons-halflings.png">
+      <PackagePath>img\glyphicons-halflings.png</PackagePath>
+      <Modified>2014-08-18T07:11:39.538</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\img\syncfusion-icons-white.png">
+      <PackagePath>img\syncfusion-icons-white.png</PackagePath>
+      <Modified>2014-08-18T07:11:39.538</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\img\syncfusion-icons.png">
+      <PackagePath>img\syncfusion-icons.png</PackagePath>
+      <Modified>2014-08-18T07:11:39.538</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\js\core.js">
+      <PackagePath>js\core.js</PackagePath>
+      <Modified>2014-09-12T21:00:57.576</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\js\dataContext.js">
+      <PackagePath>js\dataContext.js</PackagePath>
+      <Modified>2014-09-18T00:17:24.090</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2014-09-11T01:03:19.436</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\js\lib\jquery-2.1.1.min.js">
+      <PackagePath>js\lib\jquery-2.1.1.min.js</PackagePath>
+      <Modified>2014-08-20T17:24:37.665</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\js\lib\knockout-3.1.0.js">
+      <PackagePath>js\lib\knockout-3.1.0.js</PackagePath>
+      <Modified>2014-08-20T17:24:37.712</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\js\lib\navigator.js">
+      <PackagePath>js\lib\navigator.js</PackagePath>
+      <Modified>2014-08-20T17:24:37.774</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\pages\home\home.js">
+      <PackagePath>pages\home\home.js</PackagePath>
+      <Modified>2014-09-18T00:37:16.974</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Jomit\Projects\IndigoSlate\Rhino\Rhino.Win8App\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-09-19T16:57:56.974</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

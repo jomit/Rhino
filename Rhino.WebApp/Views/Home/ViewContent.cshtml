@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "ViewContent";
+}
+
+<div data-bind="visible: !$root.showLoading()" style="display:none">
+
+    <div class="m-input-append">
+        <input data-bind="value: searchText, valueUpdate: 'afterkeydown', executeOnEnter: searchContent" type="text" class="m-wrap m-ctrl-large" placeholder="search" />
+    </div>
+    <hr />
+    @*<video width="576" height="320" controls>
+            <source src="https://indigoslate.blob.core.windows.net/devcontent/WP_20140525_11_34_45_Pro.mp4" type='video/mp4; codecs="avc1.42e01e, mp4a.40.2"'>
+        </video>*@
+    <table data-bind="visible: contents().length > 0">
+        <thead>
+            <tr style="color:black;font-weight:600">
+                <td width="17%">Title</td>
+                <td width="35%">Text</td>
+                <td width="12%">Tags</td>
+                <td width="9%">How'z Boss</td>
+                <td width="9%">Video</td>
+                <td width="9%">Thumbnail</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: contents">
+            <tr>
+                <td data-bind="text: Title"></td>
+                <td data-bind="text: Text"></td>
+                <td data-bind="foreach: JSON.parse(Tags)" align="left">
+                    <p data-bind="text: Name" style="font-size:70%"></p>
+                </td>
+                <td align="left">
+                    <a class="m-btn red-stripe disabled" data-bind="visible: IsApproved == false">Watching</a>
+                    <a class="m-btn green-stripe disabled" data-bind="visible: IsApproved == true">Happy</a>
+                </td>
+                <td>
+                    <a target="_blank" class="m-btn blue-stripe" data-bind="attr: { href: FileLocation}, text: FileContentType, visible: (FileContentType != null && FileContentType != '')"></a>
+                    <span data-bind="visible: (FileContentType == null || FileContentType == '')">:-(</span>
+                </td>
+
+                <td>
+                    <a target="_blank" class="m-btn blue-stripe" data-bind="attr: { href: ThumbnailLocation}, text: ThumbnailContentType, visible: (ThumbnailContentType != null && ThumbnailContentType != '')"></a>
+                    <span data-bind="visible: (ThumbnailContentType == null || ThumbnailContentType == '')">:-(</span>
+                </td>               
+                <td><a data-bind="click: $root.approveContent, visible: IsApproved == false" class="m-btn green icn-only"><i class="icon-check icon-white"></i></a></td>
+                <td><a data-bind="click: $root.deleteContent" class="m-btn red icn-only"><i class="icon-remove icon-white"></i></a></td>
+            </tr>
+            <tr>
+                <td colspan="8"><hr /></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</div>

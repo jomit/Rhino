@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="indigoslate" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Jomit\\Projects\\IndigoSlate\\Rhino\\Rhino\.WebApp\\obj\\Production\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Jomit\\Projects\\IndigoSlate\\Rhino\\Rhino\.WebApp\\obj\\Production\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="Add write permission to App_Data Folder" description="Add write permission to App_Data folder" value="indigoslate/App_Data" tags="Hidden">
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Jomit\\Projects\\IndigoSlate\\Rhino\\Rhino\.WebApp\\obj\\Production\\Package\\PackageTmp\\App_Data$" />
+  </parameter>
+  <parameter name="AD_APPIDUri" description="" value="https://indigoslate.onmicrosoft.com/WebApp-indigoslate.azurewebsites.net" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Jomit\\Projects\\IndigoSlate\\Rhino\\Rhino\.WebApp\\obj\\Production\\Package\\PackageTmp\\Web\.config$" match="/configuration/system.identityModel/identityConfiguration/audienceUris/add[@value='APPIDUri']/@value" />
+    <parameterEntry kind="XmlFile" scope="C:\\Jomit\\Projects\\IndigoSlate\\Rhino\\Rhino\.WebApp\\obj\\Production\\Package\\PackageTmp\\Web\.config$" match="/configuration/system.identityModel.services/federationConfiguration/wsFederation[@requireHttps='true']/@realm" />
+  </parameter>
+  <parameter name="AD_ClientID" description="" value="99a9cbe7-f9b1-4fe3-ab17-1ebd701b1125" tags="" />
+  <parameter name="AD_Issuer" description="" value="https://login.windows.net/indigoslate.onmicrosoft.com/wsfed" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Jomit\\Projects\\IndigoSlate\\Rhino\\Rhino\.WebApp\\obj\\Production\\Package\\PackageTmp\\Web\.config$" match="/configuration/system.identityModel.services/federationConfiguration/wsFederation[@requireHttps='true']/@issuer" />
+  </parameter>
+  <parameter name="AD_MetadataUrl" description="" value="https://login.windows.net/indigoslate.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Jomit\\Projects\\IndigoSlate\\Rhino\\Rhino\.WebApp\\obj\\Production\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:FederationMetadataLocation']/@value" />
+  </parameter>
+  <parameter name="AD_RealmAppSetting" description="" value="https://indigoslate.onmicrosoft.com/WebApp-indigoslate.azurewebsites.net" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Jomit\\Projects\\IndigoSlate\\Rhino\\Rhino\.WebApp\\obj\\Production\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:Realm']/@value" />
+  </parameter>
+  <parameter name="AD_AudienceUriAppSetting" description="" value="https://indigoslate.onmicrosoft.com/WebApp-indigoslate.azurewebsites.net" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Jomit\\Projects\\IndigoSlate\\Rhino\\Rhino\.WebApp\\obj\\Production\\Package\\PackageTmp\\Web\.config$" match="/configuration/appSettings/add[@key='ida:AudienceUri']/@value" />
+  </parameter>
+</parameters>

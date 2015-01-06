@@ -1,0 +1,18 @@
+﻿@if (Request.IsAuthenticated)
+{
+    <text>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="navbar-text" id="currentUserName">@User.Identity.Name</li>
+            <li>
+                @Html.ActionLink("Sign out", "SignOut", "Account")
+            </li>
+        </ul>
+        <span id="baseUrl" style="display:none">@System.Configuration.ConfigurationManager.AppSettings["ServiceBaseUrl"]</span>
+    </text>
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>@Html.ActionLink("Sign in", "Index", "Home", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}

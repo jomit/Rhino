@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home Page</title>
+    <link href="/css/m-styles.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="mainContent">
+        <div id="loginDiv" data-bind="visible: userDetails.isAuthenticated() == false" style="padding-left:40%">
+            <h2>What you know?</h2><br /><br />
+            <input type="text" data-bind="value: userDetails.name" class="m-wrap m-ctrl-large" style="font-size:120%" placeholder="Enter Username" /><br />
+            <input type="password" data-bind="value: userDetails.secret" class="m-wrap m-ctrl-large" style="font-size:120%" placeholder="Enter Password" /><br />
+            <a href="#" data-bind="click: validateUser" class="m-btn black" style="font-size:120%">Login</a>
+        </div>
+        <div id="mainDiv" data-bind="visible: userDetails.isAuthenticated() == true" style="display:none;">
+            <div id="captureRequirements" data-bind="visible: userDetails.hasFilledInRequirements() == false" style="padding-left:40%">
+                <h2>Let me understand this better:</h2><br /><br />
+                <input type="text" data-bind="value: journeyData.customerName" class="m-wrap m-ctrl-large" style="font-size:120%" placeholder="Enter Client Name" /><br />
+                <input type="text" data-bind="value: journeyData.audience" class="m-wrap m-ctrl-large" style="font-size:120%" placeholder="Enter Audience" /><br />
+                <input type="text" data-bind="value: journeyData.industry" class="m-wrap m-ctrl-large" style="font-size:120%" placeholder="Enter Industry" /><br />
+                <input type="text" data-bind="value: journeyData.productOrService" class="m-wrap m-ctrl-large" style="font-size:120%" placeholder="Enter Product/Service" /><br />
+                <textarea data-bind="value: journeyData.marketingGoal" class="m-wrap m-ctrl-large" style="font-size:120%" placeholder="Enter Marketing Goal" rows="4" cols="70"></textarea><br />
+                <textarea data-bind="value: journeyData.notes" class="m-wrap m-ctrl-large" style="font-size:120%" placeholder="Enter Notes" rows="8" cols="70"></textarea><br />
+                <a href="#" data-bind="click: showCategories" class="m-btn black" style="font-size:120%">Save &amp; Continue</a>
+            </div>
+            <div id="categories" data-bind="visible: userDetails.hasFilledInRequirements() == true && userDetails.hasSelectedCategories() == false"
+                 style="padding-left:5%;width:90%;overflow:auto">
+                <h2>Select Categories:</h2><br /><br />
+                <div data-bind="foreach: tags">
+                    <span>
+                        <a href="#" data-bind="text: Branch, click: $root.categorySelected, css: IsSelected() == false ? 'm-btn big green': 'm-btn big purple'" style="font-size:185%"></a>
+                    </span>
+                </div>
+                <br /><br />
+                <a href="#" data-bind="click: showTags" class="m-btn black" style="font-size:120%; margin-left:40%">Save &amp; Continue</a>
+            </div>
+            <div id="tags" data-bind="visible: userDetails.hasSelectedCategories() == true"
+                 style="padding-left:5%;width:90%;overflow:auto">
+                <h2>Select Tags:</h2><br /><br />
+                <table>
+                    <tbody>
+                        <tr data-bind="foreach: tags">
+                            <td valign="top">
+                                <span class="m-btn purple" data-bind="text: Branch"></span><br/>
+                                <span data-bind="foreach: Nodes">
+                                    <span class="m-btn green" data-bind="text: Name"></span>
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="/pages/home/home.js"></script>
+</body>
+</html>

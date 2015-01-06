@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - IndigoSlate Administration</title>
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/css")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @*@Html.ActionLink("IndigoSlate Administration", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Categories", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Tags", "Tags", "Home")</li>
+                    <li>@Html.ActionLink("Upload Content", "UploadContent", "Home")</li>
+                    <li>@Html.ActionLink("View Content", "ViewContent", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div data-bind="visible: $root.showLoading()">
+        <div class='loader'>
+            <div class='circle'></div>
+            <div class='circle'></div>
+            <div class='circle'></div>
+            <div class='circle'></div>
+            <div class='circle'></div>
+        </div>
+        <div style="position: relative;padding-top: 100px;width: 240px;margin: auto;">Hold on !! Let me wrap this up.</div>
+    </div>
+    <div class="container body-content">
+        <div class="mainContent">
+            <div class="gotthedata" style="display:none">WooHoo !! Got the data. Had to put it in the approval queue (Boss needs to see it before anyone else).</div>
+            <div class="somethingwentwrong" style="display:none">This sucks !! Something went bonkers. Can you please try 1 more time..</div>
+            @RenderBody()
+
+        </div>
+        @*<hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - IndigoSlate Experience Journey Management</p>
+            </footer>*@
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/knockout")
+    @Scripts.Render("~/bundles/core")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

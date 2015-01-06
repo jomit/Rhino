@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<div data-bind="visible: !$root.showLoading()" style="display:none">
+
+    <h4>Tags</h4>
+    <div class="m-input-append">
+        <select class="m-wrap" data-bind="options: tags, optionsText: 'Branch', value: tagForm.selectedBranchName, optionsCaption: 'Choose Category..'"></select>
+        <input type="text" class="m-wrap" placeholder="Enter Tag Title" data-bind="value: tagForm.newNodeName" />
+        <a href="#" class="m-btn blue" data-bind="click: addNode">Add Tag</a>
+    </div>
+    <br />
+    <div data-bind="foreach: tags">
+        <table width="100%">
+            <tr data-bind="if: Nodes().length > 0 ">
+                <td>
+                    <label data-bind="text:Branch"></label>
+                    <div data-bind="foreach: Nodes">
+                        <div class="m-input-append" style="float:left; margin-right:1%">
+                            <a class="m-btn blue-stripe" data-bind="text:Name"></a>
+                            <a data-bind="click: function(){ $root.deleteNode($parent,$data); }" class="m-btn red icn-only"><i class="icon-remove icon-white"></i></a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr data-bind="if: Nodes().length > 0 ">
+                <td><hr /></td>
+            </tr>
+        </table>
+    </div>
+
+</div>
